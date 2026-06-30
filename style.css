@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #1c1c1c;
+  color: #ddd;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #2b2b2b;
+  border-bottom: 2px solid gold;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid gold;
+}
+
+.categories {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  background: #111;
+}
+
+.categories button {
+  background: black;
+  color: white;
+  border: 1px solid gold;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #2a2a2a;
+  border: 1px solid gold;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;   /* 👈 عمودی کامل */
+  object-fit: cover;
+}
+
+.card h3, .card p {
+  padding: 5px;
+}
+
+video {
+  width: 100%;
+  border: 2px solid gold;
+}
+
+.adminBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  border: none;
+  padding: 10px;
+}
+
+.panel {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  padding: 20px;
+  width: 300px;
+  border: 2px solid gold;
+}
+
+.hidden { display: none; }
+
+input, select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+}
